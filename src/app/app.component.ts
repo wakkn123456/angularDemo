@@ -95,6 +95,9 @@ export class AppComponent {
   this.article= this.article.filter((item)=>{
     return item.id !== $event;
   })
+  ///作法三
+   //當傳入的參數只有一個可簡寫、回傳若為Boolean可簡寫
+  //this.article = this.article.filter(item => item.id !==$event);
   }
 }
 
