@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  searchText = '';
+  searchText_do = '';
+  SearchText_sign= '';
+
+  changeSearchText(value) {
+    console.log(value);
+     this.searchText = value;
+  }
+  changeSearchText_sign($event) {
+    this.SearchText_sign = $event;
+  }
 }
+
+
